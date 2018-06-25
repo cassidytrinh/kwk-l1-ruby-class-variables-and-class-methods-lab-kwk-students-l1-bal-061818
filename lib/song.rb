@@ -49,4 +49,13 @@ class Song
     return genre_hash
   end
 
-  
+  def artist_count
+    artist_hash = {}
+    @@artists.each do |artist|
+      if artist_hash.key?(artist) == false
+        artist_hash[artist] = 0
+      end
+      artist_hash[artist] += 1
+    end
+    return artist_hash
+  end
