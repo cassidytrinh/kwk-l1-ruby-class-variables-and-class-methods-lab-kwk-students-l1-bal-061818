@@ -18,8 +18,8 @@ class Song
     @name
   end
 
-  def artists
-    @@artists
+  def artist
+    @artist
   end
 
   def genre
